@@ -1,0 +1,1636 @@
+{
+	"info": {
+		"_postman_id": "0feb7031-f8ea-42b0-9219-e71afb1f4ed3",
+		"name": "StudentWebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6996352"
+	},
+	"item": [
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "/Course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Course",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7080/Course",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Course"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"courseID\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"credits\": \"<integer>\",\n  \"departmentID\": \"<integer>\",\n  \"departmentName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Course",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course"
+							]
+						},
+						"description": "Add Course"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"courseID\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"credits\": \"<integer>\",\n  \"departmentID\": \"<integer>\",\n  \"departmentName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7080/Course",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Course"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Course/:courseId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Course/:courseId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course",
+								":courseId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "<integer>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7080/Course/:courseId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Course",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Course/:courseId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"courseID\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"credits\": \"<integer>\",\n  \"departmentID\": \"<integer>\",\n  \"departmentName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Course/:courseId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course",
+								":courseId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "<integer>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"courseID\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"credits\": \"<integer>\",\n  \"departmentID\": \"<integer>\",\n  \"departmentName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7080/Course/:courseId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Course",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Course/:courseId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Course/:courseId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course",
+								":courseId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "<integer>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7080/Course/:courseId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Course",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Course/StudentsByCourse/:courseId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Course/StudentsByCourse/:courseId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course",
+								"StudentsByCourse",
+								":courseId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "1",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7080/Course/StudentsByCourse/:courseId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Course",
+										"StudentsByCourse",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "/Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Department",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Department"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7080/Department",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Department"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Computer Engineering\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Department",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Department"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"departmentID\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7080/Department",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"Department"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Department/:departmentId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Department/:departmentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Department",
+								":departmentId"
+							],
+							"variable": [
+								{
+									"key": "departmentId",
+									"value": "1",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Department/:departmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Department",
+										":departmentId"
+									],
+									"variable": [
+										{
+											"key": "departmentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Department/:departmentId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"departmentID\": \"4\",\n  \"name\": \"Computer Engineer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Department/:departmentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Department",
+								":departmentId"
+							],
+							"variable": [
+								{
+									"key": "departmentId",
+									"value": "4",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"departmentID\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Department/:departmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Department",
+										":departmentId"
+									],
+									"variable": [
+										{
+											"key": "departmentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Department/:departmentId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Department/:departmentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Department",
+								":departmentId"
+							],
+							"variable": [
+								{
+									"key": "departmentId",
+									"value": "4",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Department/:departmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Department",
+										":departmentId"
+									],
+									"variable": [
+										{
+											"key": "departmentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gender",
+			"item": [
+				{
+					"name": "/Gender",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Gender",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Gender",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Gender",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Female\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Gender",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"genderID\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Gender",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Gender/:genderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Gender/:genderId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender",
+								":genderId"
+							],
+							"variable": [
+								{
+									"key": "genderId",
+									"value": "1",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Gender/:genderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender",
+										":genderId"
+									],
+									"variable": [
+										{
+											"key": "genderId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Gender/:genderId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"genderID\": \"3\",\n  \"name\": \"Female\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Gender/:genderId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender",
+								":genderId"
+							],
+							"variable": [
+								{
+									"key": "genderId",
+									"value": "3",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"genderID\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Gender/:genderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender",
+										":genderId"
+									],
+									"variable": [
+										{
+											"key": "genderId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Gender/:genderId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Gender/:genderId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender",
+								":genderId"
+							],
+							"variable": [
+								{
+									"key": "genderId",
+									"value": "3",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Gender/:genderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender",
+										":genderId"
+									],
+									"variable": [
+										{
+											"key": "genderId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "/Student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Student",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Student"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Student",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Student"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullName\": \"Seif Hassan\",\n  \"email\": \"seif.hassen@gmail.com\",\n  \"phone\": \"012358746954\",\n  \"birthDate\": \"1998-11-25\",\n  \"genderID\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Student",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Student"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"studentID\": \"<integer>\",\n  \"fullName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"birthDate\": \"<dateTime>\",\n  \"genderID\": \"<integer>\",\n  \"genderName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Student",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Student"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Student/:studentId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Student/:studentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Student",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "1",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Student/:studentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Student",
+										":studentId"
+									],
+									"variable": [
+										{
+											"key": "studentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Student/:studentId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"studentID\": 2,\n    \"fullName\": \"Seif Hassan\",\n    \"email\": \"seif.hassen@gmail.com\",\n    \"phone\": \"012358746954\",\n    \"birthDate\": \"1998-11-25T00:00:00\",\n    \"genderID\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Student/:studentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Student",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "2",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"studentID\": \"<integer>\",\n  \"fullName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"birthDate\": \"<dateTime>\",\n  \"genderID\": \"<integer>\",\n  \"genderName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Student/:studentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Student",
+										":studentId"
+									],
+									"variable": [
+										{
+											"key": "studentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Student/:studentId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Student/:studentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Student",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "2",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Student/:studentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Student",
+										":studentId"
+									],
+									"variable": [
+										{
+											"key": "studentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Student/StudentsByCourse/:courseId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Student/StudentsByCourse/:courseId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Student",
+								"StudentsByCourse",
+								":courseId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "1",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Student/StudentsByCourse/:courseId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Student",
+										"StudentsByCourse",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "studentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										},
+										{
+											"key": "courseId",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "StudentCourse",
+			"item": [
+				{
+					"name": "/Course/registerStudentCourse/:courseId/:studentId",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Course/registerStudentCourse/:courseId/:studentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course",
+								"registerStudentCourse",
+								":courseId",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "<integer>",
+									"description": "(Required) "
+								},
+								{
+									"key": "studentId",
+									"value": "<integer>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Course/registerStudentCourse/:courseId/:studentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Course",
+										"registerStudentCourse",
+										":courseId",
+										":studentId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "<integer>",
+											"description": "(Required) "
+										},
+										{
+											"key": "studentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/Course/registerStudentCourse/:courseId/:studentId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Course/registerStudentCourse/:courseId/:studentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Course",
+								"registerStudentCourse",
+								":courseId",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "courseId",
+									"value": "<integer>",
+									"description": "(Required) "
+								},
+								{
+									"key": "studentId",
+									"value": "<integer>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Course/registerStudentCourse/:courseId/:studentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Course",
+										"registerStudentCourse",
+										":courseId",
+										":studentId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "<integer>",
+											"description": "(Required) "
+										},
+										{
+											"key": "studentId",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7080",
+			"type": "string"
+		}
+	]
+}
